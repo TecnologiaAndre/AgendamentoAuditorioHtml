@@ -6,14 +6,24 @@
     <title>Agendamento Auditório - Gertaxi</title>
     <style>
         body, html {
-            margin: 0; padding: 0; height: 100%; overflow: hidden;
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            overflow: hidden;
+            background-color: #0e1117; /* Evita flash branco enquanto o Streamlit carrega */
         }
         iframe {
-            width: 100%; height: 100%; border: none;
+            width: 100%; 
+            height: 100%; 
+            border: none;
         }
     </style>
 </head>
 <body>
-    <iframe src="https://agendamentoauditorio-czeeyrnkqxnvfjjmena8vk.streamlit.app/"></iframe>
+    <iframe 
+        src="https://agendamentoauditorio-czeeyrnkqxnvfjjmena8vk.streamlit.app/?embed=true" 
+        allow="geolocation; microphone; camera; clipboard-write; clipboard-read;"
+        sandbox="allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+    </iframe>
 </body>
 </html>
